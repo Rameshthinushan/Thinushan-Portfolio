@@ -1,0 +1,83 @@
+:root {
+  --body-font: "Inter", sans-serif;
+  --site-font-color: #ffc86b;
+  --site-theme-background: #191c1c;
+  /* --site-container-background: #222525; */
+  --site-container-background: #191919;
+  --site-border: #2a2e2e;
+  --body-color: #8B9F9F;
+  --them-green: #56B887;
+
+}
+
+
+html, body {
+  scroll-behavior: smooth;
+  font-family: var(--body-font) !important;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--body-color);
+  line-height: 26px;
+  overflow-y: auto;
+}
+
+.site__black {
+  background: var(--site-theme-background);
+}
+
+.content__box {
+  background: var(--site-container-background);
+  border-radius: 10px;
+  border: 2px solid var(--site-border);
+}
+
+.profile-container {
+  background:#0d0d0d;
+  box-shadow: white 0px 0px 100px 0em inset;
+}
+
+/* .profile-image {
+  filter: drop-shadow(0px -28px 57px);
+} */
+
+.site-author-name {
+  font-weight: 700;
+}
+
+.download__btn {
+  border: 2px solid var(--site-border);
+  color: var(--body-color);
+}
+
+.download__btn:hover {
+  background: var(--them-green) !important;
+  color: white;
+}
+
+.site-auther-description {
+  font-size: 24px;
+  line-height: 34px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
