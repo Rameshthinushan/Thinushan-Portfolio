@@ -10,7 +10,6 @@
 
 }
 
-
 html, body {
   scroll-behavior: smooth;
   font-family: var(--body-font) !important;
@@ -24,8 +23,18 @@ html, body {
 .custom__w {
   width: 35%;
 }
+
 .site__black {
   background: var(--site-theme-background);
+}
+
+.skill-box {
+  border-radius: 10px;
+  border: 2px solid var(--site-border);
+}
+
+.skill-box:hover {
+  border: 2px solid var(--them-green) !important;
 }
 
 .content__box {
@@ -63,6 +72,83 @@ html, body {
 .site-auther-description {
   font-size: 24px;
   line-height: 34px;  
+}
+
+.side-tabs > .active {
+  color: var(--them-green) !important;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.custom__html {
+  --bs-tooltip-bg: #ff4b00;
+  --bs-tooltip-color: white;
+}
+
+.custom__css {
+  --bs-tooltip-bg: #1572b6;
+  --bs-tooltip-color: white;
+}
+
+.custom__js {
+  --bs-tooltip-bg:#ffdf00;
+  --bs-tooltip-color: black;
+}
+
+.custom__php {
+  --bs-tooltip-bg:#777bb3;
+  --bs-tooltip-color: black;
+}
+
+.custom__laravel {
+  --bs-tooltip-bg: #ff2d20;
+  --bs-tooltip-color: white;
+}
+
+.custom__vue {
+  --bs-tooltip-bg: #41b883;
+  --bs-tooltip-color: white;
+}
+
+.custom__react {
+  --bs-tooltip-bg: #00d8ff;
+  --bs-tooltip-color: white;
+}
+
+
+.custom__node {
+  --bs-tooltip-bg: #83cd29;
+  --bs-tooltip-color: white;
+}
+
+.custom__mysql {
+  --bs-tooltip-bg: #036087;
+  --bs-tooltip-color: white;
+}
+
+.custom__git {
+  --bs-tooltip-bg: #dd4c35;
+  --bs-tooltip-color: white;
+}
+
+.custom__rest {
+  --bs-tooltip-bg: #fbc02d;
+  --bs-tooltip-color: white;
+}
+
+.firts__line__heigth {
+  width: 60px;
+  height: 250px;
+}
+
+.dot-shadow {
+  filter: drop-shadow(0px 0px 10px var(--them-green));
 }
 
 
