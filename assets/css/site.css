@@ -220,8 +220,9 @@ html, body {
     height: auto;
   }
 
-  .unique-icon {
-    top: 230px;
+  .unique-icon-mobile {
+    position: fixed;
+    bottom: 0;
   }
 
   .custom__w {
