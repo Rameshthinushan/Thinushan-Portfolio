@@ -16,6 +16,31 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col">
+
+        <div class="row mt-lg-0 mt-3 d-lg-none">
+          <div class="col-10"></div>
+          <div class="col-2 text-end">
+            <div 
+              data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"
+              class="sider-button content__box pb-1 pe-2 ps-2 pt-1 rounded-3 shadow">
+              <i class="bi bi-list"></i>
+            </div>
+
+            <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  I will not close if you click outside of me.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-lg-4">
             <div class="content__box text-center">
@@ -37,7 +62,7 @@
                 <div>design systems.</div> 
               </div>
               <div class="row mb-5">
-                <div class="col-6 mx-auto d-flex text-center">
+                <div class="col-auto mx-auto d-flex text-center">
                   <div class="row">
                     <div class="col">
                       <i class="bi bi-facebook"></i>
@@ -65,7 +90,7 @@
           <div class="col-lg-8">
             <div class="row">
               <div class="col-lg-11">
-                <div class="row">
+                <div class="d-lg-flex d-none row">
                   <div class="col">
                     <div class="content__box p-4">
                       <div class="row align-items-center">
@@ -86,6 +111,7 @@
                   <div class="col">
                     <div class="content__box p-4 mt-4">
                       <div class="tab-content" id="v-pills-tabContent">
+                        <!--About-->
                         <div class="tab-pane fade show active" id="section-about" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
                           <div class="row">
                             <div class="col">
@@ -123,6 +149,7 @@
                             </div>
                           </div>
                         </div>
+                        <!--Skill-->
                         <div class="tab-pane fade" id="section-skill" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                           <div class="row">
                             <div class="col">
@@ -205,6 +232,7 @@
                             </div>
                           </div>
                         </div>
+                        <!--Experience-->
                         <div class="tab-pane fade" id="section-experience" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
                           <div class="row">
                             <div class="col">
@@ -222,7 +250,7 @@
                                         src="assets/images/dot.png" 
                                         alt="" 
                                         height="80" 
-                                        class="dot-shadow"
+                                        class="dot-shadow mobile-adjust"
                                       >
                                       <img 
                                         src="assets/images/line.png" 
@@ -254,12 +282,12 @@
                                         src="assets/images/dot.png" 
                                         alt="" 
                                         height="80" 
-                                        class="dot-shadow"
+                                        class="dot-shadow mobile-adjust"
                                       >
                                       <img 
                                         src="assets/images/line.png" 
                                         alt="" 
-                                        class="firts__line__heigth"
+                                        class="second__line__heigth"
                                       >
                                     </div>
                                     <div class="col-10 mt-3">
@@ -285,6 +313,7 @@
                             </div>
                           </div>
                         </div>
+                        <!--Education-->
                         <div class="tab-pane fade" id="section-education" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
                           <div class="row">
                             <div class="col">
@@ -292,29 +321,193 @@
                             </div>
                           </div>
                         </div>
+                        <!--Portfolio-->
                         <div class="tab-pane fade" id="section-portfolio" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
                           <div class="row">
                             <div class="col">
-                              section-portfolio
+                              <div class="mb-4">
+                                <i class="bi bi-folder2 site-green-color me-2"></i> Portfolio
+                              </div>
+                              <div class="text-white mb-4">
+                                <h1>See My Works</h1>
+                              </div>
+                              <div>
+                                <div class="row">
+                                  <div class="col-lg-5">
+                                    <div class="p-3 skill-box site__blac">
+                                      <div class="mb-3">
+                                        <img src="assets/images/order.jpg" alt="" height="179" class="rounded w-100">
+                                      </div>
+                                      <div class="mb-3 small">
+                                        Digit Web Lanka PVT(LTD)
+                                      </div>
+                                      <div class="mb-3 text-white">
+                                        <div><h2 class="project-name">Order</h2></div>
+                                        <div><h2 class="project-name">Management</h2></div>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5 mt-4 mt-lg-0">
+                                    <div class="p-3 skill-box site__blac">
+                                      <div class="mb-3">
+                                        <img src="assets/images/inv.jpg" alt="" height="179" class="rounded w-100">
+                                      </div>
+                                      <div class="mb-3 small">
+                                        Digit Web Lanka PVT(LTD)
+                                      </div>
+                                      <div class="mb-3 text-white">
+                                        <div><h2 class="project-name">Inventory</h2></div>
+                                        <div><h2 class="project-name">Management</h2></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5 mt-4">
+                                    <div class="p-3 skill-box site__blac">
+                                      <div class="mb-3">
+                                        <img src="assets/images/list.jpg" alt="" height="179" class="rounded w-100">
+                                      </div>
+                                      <div class="mb-3 small">
+                                        Digit Web Lanka PVT(LTD)
+                                      </div>
+                                      <div class="mb-3 text-white">
+                                        <div><h2 class="project-name">Listing</h2></div>
+                                        <div><h2 class="project-name">Management</h2></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5 mt-4">
+                                    <div class="p-3 skill-box site__blac">
+                                      <div class="mb-3">
+                                        <img src="assets/images/account.jpg" alt="" height="179" class="rounded w-100">
+                                      </div>
+                                      <div class="mb-3 small">
+                                        Digit Web Lanka PVT(LTD)
+                                      </div>
+                                      <div class="mb-3 text-white">
+                                        <div><h2 class="project-name">Accounts</h2></div>
+                                        <div><h2 class="project-name">Management</h2></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5 mt-4">
+                                    <div class="p-3 skill-box site__blac">
+                                      <div class="mb-3">
+                                        <img src="assets/images/store.jpg" alt="" height="179" class="rounded w-100">
+                                      </div>
+                                      <div class="mb-3 small">
+                                        FreeLancing
+                                      </div>
+                                      <div class="mb-3 text-white">
+                                        <div><h2 class="project-name">Store</h2></div>
+                                        <div><h2 class="project-name">Management</h2></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-
+                        <!--Contact-->
                         <div class="tab-pane fade" id="section-contact" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
                           <div class="row">
                             <div class="col">
-                              section-contact
+                              <div class="mb-4">
+                                <i class="bi bi-chat-left site-green-color me-2"></i> Contact Me
+                              </div>
+                              <div class="text-white">
+                                <h1>Contact</h1>
+                              </div>
+                              <div class="mb-5 mt-4">
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="row">
+                                      <div class="col-lg-5">
+                                        <div class="skill-box p-3">
+                                          <div class="row align-items-center">
+                                            <div class="col">
+                                              <img src="assets/images/phone.png" alt="" height="60">
+                                            </div>
+                                            <div class="col">
+                                              <div>Contact</div>
+                                              <div>Phone</div>
+                                            </div>
+                                          </div>
+                                          <div class="mt-3 row">
+                                            <div class="col text-white fs-5">
+                                              +94 76 325 6327
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-5  mt-4 mt-lg-0">
+                                        <div class="skill-box p-3">
+                                          <div class="row align-items-center">
+                                            <div class="col">
+                                              <img src="assets/images/email.png" alt="" height="60">
+                                            </div>
+                                            <div class="col">
+                                              <div>Contact</div>
+                                              <div>Email</div>
+                                            </div>
+                                          </div>
+                                          <div class="mt-3 row">
+                                            <div class="col text-white fs-5">
+                                              rameshthinushan@gmail.com
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                      <div class="col-lg-5">
+                                        <div class="skill-box p-3">
+                                          <div class="row align-items-center">
+                                            <div class="col">
+                                              <img src="assets/images/location.png" alt="" height="60">
+                                            </div>
+                                            <div class="col">
+                                              <div>Contact</div>
+                                              <div>Location</div>
+                                            </div>
+                                          </div>
+                                          <div class="mt-3 row">
+                                            <div class="col text-white fs-5">
+                                              Jaffna, Srilanka
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-3">
+                                <h2>Location Map</h2>
+                              </div>
+                              <div>
+                                <iframe 
+                                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.324995703934!2d80.01809775813685!3d9.65323707290667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe56bad7689735%3A0x4428bae8d47fa23f!2sSt.%20Patrick&#39;s%20College%2C%20Jaffna!5e0!3m2!1sen!2slk!4v1714730428543!5m2!1sen!2slk" 
+                                  width="600" 
+                                  height="450" 
+                                  allowfullscreen="" 
+                                  loading="lazy" 
+                                  referrerpolicy="no-referrer-when-downgrade"
+                                  class="w-100 rounded-3"
+                                ></iframe>
+                              </div>
+
+
                             </div>
                           </div>
                         </div>
-
                       </div>
-    
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-1">
+              <div class="col-lg-1 hide-nav">
                 <div class="row">
                   <div class="col text-center">
                     <div class="content__box pt-4 pb-4">
@@ -355,6 +548,15 @@
        
       </div>
     </div>  
+
+
+
+
+
+
+
+
+
   </div>
 </body>
 </html>

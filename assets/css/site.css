@@ -35,7 +35,15 @@ html, body {
 
 .skill-box:hover {
   border: 2px solid var(--them-green) !important;
+  transition: border-color 1s ease;
 }
+
+
+.skill-box:hover .project-name {
+  color: var(--them-green) !important;
+  transition: color 1s ease;
+}
+
 
 .content__box {
   background: var(--site-container-background);
@@ -51,9 +59,6 @@ html, body {
 .site-green-color {
   color: var(--them-green)
 }
-/* .profile-image {
-  filter: drop-shadow(0px -28px 57px);
-} */
 
 .site-author-name {
   font-weight: 700;
@@ -147,11 +152,48 @@ html, body {
   height: 250px;
 }
 
+.second__line__heigth {
+  width: 60px;
+  height: 250px;
+}
+
 .dot-shadow {
   filter: drop-shadow(0px 0px 10px var(--them-green));
 }
 
+.sider-button {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+}
 
+@media only screen and (max-width: 1000px) {
+  .profile-image {
+    height: 215px;
+  }
+
+  .hide-nav {
+    display: none;
+  }
+
+  .mobile-adjust {
+    position: relative;
+    right: 20px;
+  }
+
+  .firts__line__heigth {
+    position: relative;
+    right: 10px;
+    height: 485px;
+  }
+
+  .second__line__heigth {
+    position: relative;
+    right: 10px;
+    height: 510px;
+  }
+
+}
 
 
 
