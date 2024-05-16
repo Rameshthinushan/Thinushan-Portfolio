@@ -222,7 +222,7 @@ html, body {
 
   .unique-icon-mobile {
     position: fixed;
-    bottom: 0;
+    bottom: 15px;
   }
 
   .custom__w {
