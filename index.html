@@ -16,28 +16,42 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col">
-
         <div class="row mt-lg-0 mt-3 d-lg-none">
           <div class="col-10"></div>
           <div class="col-2 text-end">
-            <div 
-              data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"
-              class="sider-button content__box pb-1 pe-2 ps-2 pt-1 rounded-3 shadow">
-              <i class="bi bi-list"></i>
+            <div data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" class="sider-button content__box pb-1 pe-2 ps-2 pt-1 rounded-3 shadow">
+              <i class="bi bi-list text-warning"></i>
             </div>
-
-            <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
+            <!-- off--canvas container  -->
+            <div class="offcanvas offcanvas-end offcanva-bg w-65" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
               <div class="offcanvas-body">
-                <div>
-                  I will not close if you click outside of me.
+                <div class="text-white text-center">
+                  <div class="nav flex-column nav-pills side-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="active mb-4 mt-4" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#section-about" role="tab" aria-controls="section-about" aria-selected="true">
+                      <i class="bi bi-person" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="About" data-bs-custom-class="custom-nav-tooltip"></i>
+                    </div>
+                    <div class="mb-4 mt-2" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#section-skill" type="button" role="tab" aria-controls="section-skill" aria-selected="true">
+                      <i class="bi bi-vector-pen" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Skill" data-bs-custom-class="custom-nav-tooltip"></i>
+                    </div>
+                    <div class="mb-4 mt-2" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#section-experience" type="button" role="tab" aria-controls="section-experience" aria-selected="true" >
+                      <i class="bi bi-briefcase" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Experience" data-bs-custom-class="custom-nav-tooltip"></i>
+                    </div>
+                    <div class="mb-4 mt-2" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#section-education" type="button" role="tab" aria-controls="section-education" aria-selected="true">
+                      <i class="bi bi-mortarboard" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Education" data-bs-custom-class="custom-nav-tooltip"></i>
+                    </div>
+                    <div class="mb-4 mt-2" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#section-portfolio" type="button" role="tab" aria-controls="section-portfolio" aria-selected="true">
+                      <i class="bi bi-folder2" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Portfolio" data-bs-custom-class="custom-nav-tooltip"></i>
+                    </div>
+                    <div class="mb-4 mt-2" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#section-contact" type="button" role="tab" aria-controls="section-contact" aria-selected="true">
+                      <i class="bi bi-chat-left" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Contact Me" data-bs-custom-class="custom-nav-tooltip"></i>
+                    </div>
+                    <div class="unique-icon">
+                      <img src="assets/images/peace.png" alt="" height="30">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -100,8 +114,8 @@
                         <div class="col-1 text-white">
                           Home
                         </div>
-                        <div class="col-2">
-                          Contact Me
+                        <div class="col text-end">
+                          <img src="assets/images/peace.png" alt="" height="30">
                         </div>
                       </div>
                     </div>
@@ -109,7 +123,7 @@
                 </div>
                 <div class="row">
                   <div class="col">
-                    <div class="content__box p-4 mt-4">
+                    <div class="content__box p-4 mt-4 overflow-auto default-heigth-contant" id="scroll-bar-style">
                       <div class="tab-content" id="v-pills-tabContent">
                         <!--About-->
                         <div class="tab-pane fade show active" id="section-about" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
@@ -126,24 +140,26 @@
                                 <p class="lh-lg">I thrive on mastering new technologies, always eager to dive into the latest tools and frameworks to enhance my skill set. With a passion for learning and a commitment to excellence, I'm dedicated to delivering robust, user-centric solutions that push the boundaries of what's possible in web development.</p>
                                 <p>Let's collaborate and bring your ideas to life with cutting-edge solutions tailored to your needs.</p>
                               </div>
-                              <div class="d-flex mb-3">
-                                <div class="custom__w">
-                                  <div class="text-white fw-bold">NAME</div>
-                                  <div>Ramesh Thinushan</div>
+                              <div>
+                                <div class="d-lg-flex mb-lg-3">
+                                  <div class="custom__w">
+                                    <div class="text-white fw-bold">NAME</div>
+                                    <div>Ramesh Thinushan</div>
+                                  </div>
+                                  <div class="custom__w">
+                                    <div class="text-white fw-bold">ADDRESS</div>
+                                    <div>Jaffna, Srilanka</div>
+                                  </div>
                                 </div>
-                                <div class="custom__w">
-                                  <div class="text-white fw-bold">ADDRESS</div>
-                                  <div>Jaffna, Srilanka</div>
-                                </div>
-                              </div>
-                              <div class="d-flex">
-                                <div class="custom__w">
-                                  <div class="text-white fw-bold">PHONE</div>
-                                  <div>+94 76 325 6327</div>
-                                </div>
-                                <div class="custom__w">
-                                  <div class="text-white fw-bold">EXPERIENCE</div>
-                                  <div>2 Years</div>
+                                <div class="d-lg-flex mb-lg-3">
+                                  <div class="custom__w">
+                                    <div class="text-white fw-bold">PHONE</div>
+                                    <div>+94 76 325 6327</div>
+                                  </div>
+                                  <div class="custom__w">
+                                    <div class="text-white fw-bold">EXPERIENCE</div>
+                                    <div>2 Years</div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -517,25 +533,34 @@
                 </div>
                 <div class="row">
                   <div class="col text-center">
-                    <div class="content__box mt-4">
+                    <div class="content__box mt-4 default-heigth-contant">
                       <div class="nav flex-column nav-pills side-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                         <!--About-->
                         <div class="active mb-4 mt-4" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#section-about" role="tab" aria-controls="section-about" aria-selected="true">
-                          <i class="bi bi-person"></i>
+                          <i class="bi bi-person" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="About" data-bs-custom-class="custom-nav-tooltip"></i>
                         </div>
+                        <!--Skill-->
                         <div class="mb-4 mt-2" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#section-skill" type="button" role="tab" aria-controls="section-skill" aria-selected="true">
-                          <i class="bi bi-vector-pen"></i>
+                          <i class="bi bi-vector-pen" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Skill" data-bs-custom-class="custom-nav-tooltip"></i>
                         </div>
+                        <!--Experience-->
                         <div class="mb-4 mt-2" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#section-experience" type="button" role="tab" aria-controls="section-experience" aria-selected="true" >
-                          <i class="bi bi-briefcase"></i>
+                          <i class="bi bi-briefcase" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Experience" data-bs-custom-class="custom-nav-tooltip"></i>
                         </div>
+                        <!--Education-->
                         <div class="mb-4 mt-2" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#section-education" type="button" role="tab" aria-controls="section-education" aria-selected="true">
-                          <i class="bi bi-mortarboard"></i>
+                          <i class="bi bi-mortarboard" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Education" data-bs-custom-class="custom-nav-tooltip"></i>
                         </div>
+                        <!--Portfolio-->
                         <div class="mb-4 mt-2" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#section-portfolio" type="button" role="tab" aria-controls="section-portfolio" aria-selected="true">
-                          <i class="bi bi-folder2"></i>
+                          <i class="bi bi-folder2" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Portfolio" data-bs-custom-class="custom-nav-tooltip"></i>
                         </div>
+                        <!--Contact-->
                         <div class="mb-4 mt-2" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#section-contact" type="button" role="tab" aria-controls="section-contact" aria-selected="true">
-                          <i class="bi bi-chat-left"></i>
+                          <i class="bi bi-chat-left" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Contact Me" data-bs-custom-class="custom-nav-tooltip"></i>
+                        </div>
+                        <div class="unique-icon">
+                          <img src="assets/images/peace.png" alt="" height="30">
                         </div>
                       </div>
                     </div>
@@ -545,18 +570,8 @@
             </div>
           </div>
         </div>
-       
       </div>
-    </div>  
-
-
-
-
-
-
-
-
-
+    </div> 
   </div>
 </body>
 </html>
