@@ -20,6 +20,10 @@ html, body {
   overflow-y: auto;
 }
 
+.custom__color {
+  color: var(--body-color);
+}
+
 .custom__w {
   width: 35%;
 }
@@ -162,12 +166,22 @@ html, body {
 
 .firts__line__heigth {
   width: 60px;
-  height: 250px;
+  height: 235px;
 }
 
 .second__line__heigth {
   width: 60px;
-  height: 250px;
+  height: 220px;
+}
+
+.firts__line__heigth__education {
+  width: 60px;
+  height: 140px;
+}
+
+.second__line__heigth_eductation {
+  width: 60px;
+  height: 130px;
 }
 
 .dot-shadow {
@@ -214,6 +228,18 @@ html, body {
     position: relative;
     right: 10px;
     height: 510px;
+  }
+
+  .firts__line__heigth__education {
+    position: relative;
+    right: 10px;
+    height: 220px;
+  }
+
+  .second__line__heigth_eductation {
+    position: relative;
+    right: 10px;
+    height: 255px;
   }
 
   .default-heigth-contant {
